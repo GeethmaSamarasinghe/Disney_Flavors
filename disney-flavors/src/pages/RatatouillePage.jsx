@@ -1,5 +1,6 @@
 import React from 'react';
 import remyImage from '../assets/remy.jpg'
+import bgImage from '../assets/rat-bg.jpg'
 
 export default function RatatouillePage() {
   return (
@@ -16,19 +17,17 @@ export default function RatatouillePage() {
                   className="w-full h-full object-cover"
                 />
                 
-                {/* Disney Pixar Logo */}
-                <div className="absolute top-8 left-8">
-                  <div className="text-white text-sm font-semibold tracking-widest">
-                    Disney · PIXAR
-                  </div>
-                </div>
-                
-                
               </div>
 
               {/* Right Side - Quote */}
-              <div className="w-3/5 bg-gradient-to-br from-amber-900 via-amber-800 to-stone-900 flex items-center justify-center p-16">
+              <div className="w-3/5 bg-gradient-to-br from-amber-900 via-amber-800 to-stone-900 flex items-center justify-center p-16"
+              style={{
+                      backgroundImage: `url(${bgImage})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center'
+                    }}>
                 <div className="max-w-2xl text-center">
+
                   <blockquote>
                     <p className="text-white text-4xl leading-relaxed mb-8 font-light">
                       "Good food is like music you can taste, color you can smell. There is excellence all around you. You need only be aware to stop and savor it."

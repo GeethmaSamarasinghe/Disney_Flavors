@@ -1,8 +1,8 @@
-import TurningRedPage from './pages/TurningRedPage'
+import RatatouillePage from './pages/RatatouillePage'
 
 function App() {
   return (
-    <TurningRedPage />  // Change this to see different pages
+    <RatatouillePage />  // Change this to see different pages
   );
 }
 
