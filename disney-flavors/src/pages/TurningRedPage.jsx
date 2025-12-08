@@ -1,8 +1,8 @@
 import React from 'react';
-import tianaImage from '../assets/tiana.jpg'
-import bgImage from '../assets/frog-bg.jpg'
+import pandaImage from '../assets/turning-red.jpg'
+import bgImage from '../assets/panda-bg.jpg'
 
-export default function TianaPage() {
+export default function TurningRedPage() {
   return (
     <div className="min-h-screen w-full">
       {/* Hero Section */}
@@ -12,8 +12,8 @@ export default function TianaPage() {
               {/* Left Side - Character Image */}
               <div className="w-2/5 relative bg-gradient-to-br from-orange-400 via-orange-500 to-yellow-600">
                 <img
-                  src={tianaImage}
-                  alt="Tiana"
+                  src={pandaImage}
+                  alt="Panda"
                   className="w-full h-full object-cover"
                 />                
               </div>
@@ -29,10 +29,9 @@ export default function TianaPage() {
                 <div className="max-w-2xl text-center">
                   <blockquote>
                     <p className="text-white text-4xl leading-relaxed mb-8 font-light">
-                    "The thing about good food?It bring folks together"
+                    "Food is our love language"
                     </p>
                     <footer className="text-white text-3xl font-light">
-                      -Tiana's Dad James
                     </footer>
                   </blockquote>
                 </div>
@@ -47,7 +46,7 @@ export default function TianaPage() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-8 text-center">
           <div className="mb-6">
-            <h3 className="text-2xl font-bold mb-2">The Princess and the Frog</h3>
+            <h3 className="text-2xl font-bold mb-2">Turning Red</h3>
             
           </div>
           <p className="text-gray-500 text-sm">
