@@ -1,8 +1,8 @@
-import RatatouillePage from './pages/RatatouillePage'
+import TianaPage from './pages/TianaPage'
 
 function App() {
   return (
-    <RatatouillePage />
+    <TianaPage />  // Change this to see different pages
   );
 }
 
