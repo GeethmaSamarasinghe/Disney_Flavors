@@ -1,8 +1,8 @@
-import RatatouillePage from './pages/RatatouillePage'
+import ZootopiaPage from './pages/ZootopiaPage'
 
 function App() {
   return (
-    <RatatouillePage />  // Change this to see different pages
+    <ZootopiaPage />  // Change this to see different pages
   );
 }
 

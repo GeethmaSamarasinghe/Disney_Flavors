@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import remyImage from '../assets/remy.jpg'
 import bgImage from '../assets/rat-bg.jpg'
 
 export default function RatatouillePage() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen w-full">
       {/* Hero Section */}
@@ -10,7 +19,7 @@ export default function RatatouillePage() {
         <div className="w-full h-screen max-w-screen-2xl mx-auto">
             <div className="flex h-full">
               {/* Left Side - Character Image */}
-              <div className="w-2/5 relative bg-gradient-to-br from-orange-400 via-orange-500 to-yellow-600">
+              <div className="w-2/5 relative bg-gradient-to-br from-orange-400 via-orange-500 to-yellow-600 transition-all duration-1000 ease out ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}">
                 <img
                   src={remyImage}
                   alt="Remy"
@@ -20,7 +29,7 @@ export default function RatatouillePage() {
               </div>
 
               {/* Right Side - Quote */}
-              <div className="w-3/5 bg-gradient-to-br from-amber-900 via-amber-800 to-stone-900 flex items-center justify-center p-16"
+              <div className="w-3/5 bg-gradient-to-br from-amber-900 via-amber-800 to-stone-900 flex items-center justify-center p-16 transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}"
               style={{
                       backgroundImage: `url(${bgImage})`,
                       backgroundSize: 'cover',
